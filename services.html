@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="service.css">
+    <title>Pet Shop</title>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="home">Home</a></li>
+            <li><a href="services">Serviços</a></li>
+            <li><a href="animals">Animais</a></li>
+            <li><a href="calls">Atendimentos</a></li>
+        </ul>
+    </nav>
+    <h1>Serviços</h1>
+    <form id="create-service-form">
+        <input class="create-service-input" type="text" name="service_name" placeholder="Nome do usuário" />
+        <input class="create-service-input" type="text" name="price" placeholder="Preço do Serviço"/>
+        <input  class="create-service-input" type="text" name="duration" placeholder="Duração do Serviço"/>
+        <button id="create-service-button" type="submit">Criar Serviço</button>
+    </form>
+    <table id="service-list-container">
+        <tr>
+            <th>Nome</th>
+            <th>Preço</th>
+            <th>Duração</th>
+        </tr>
+    </table>
+    <script src="scriptService.js"></script>
+</body>
+</html>
