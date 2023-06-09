@@ -4,14 +4,22 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="index.css">
+    <link rel="stylesheet" type="text/css" href="./index.css">
     <title>Pet Shop</title>
 </head>
 <body>
+    <nav>
+        <ul>
+            <li><a href="home">Home</a></li>
+            <li><a href="services">Serviços</a></li>
+            <li><a href="animals">Animais</a></li>
+            <li><a href="calls">Atendimentos</a></li>
+        </ul>
+    </nav>
     <h1>Meu Pet Shop ERP</h1>
     <form id="create-user-form">
         <input class="create-user-input" type="text" name="name" placeholder="Nome do usuário" />
-        <input class="create-user-input" type="text" name="birthDate" placeholder="Data de nascimento" />
+        <input class="create-user-input" type="text" name="birth_date" placeholder="Data de nascimento" />
         <input class="create-user-input" type="email" name="email" placeholder="Email" />
         <input class="create-user-input" type="text" name="cpf" placeholder="CPF" />
         <button id="create-user-button" type="submit">Criar usuário</button>
@@ -24,6 +32,6 @@
             <th>CPF</th>
         </tr>
     </table>
-    <script src="script.js"></script>
+    <script src="./script.js"></script>
 </body>
 </html>

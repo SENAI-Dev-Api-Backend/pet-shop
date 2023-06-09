@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="calls.css">
+    <title>Pet Shop</title>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="home">Home</a></li>
+            <li><a href="services">Serviços</a></li>
+            <li><a href="animals">Animais</a></li>
+            <li><a href="calls">Atendimentos</a></li>
+        </ul>
+    </nav>
+    <h1>Meu Pet Shop ERP</h1>
+    <form id="create-call-form">
+        <input class="create-call-input" type="text" name="service-types" placeholder="tipo do serviço" />
+        <input class="create-call-input" type="text" name="animal" placeholder="nome do animal" />
+        <input class="create-call-input" type="text" name="scheduled_date" placeholder="Data Agendada" />
+        <button id="create-call-button" type="submit">Salvar Serviços</button>
+    </form>
+    <table id="call-list-container">
+        <tr>
+            <th>Tipo do Serviço</th>
+            <th>Nome do Animal</th>
+            <th>Data Agendada</th>
+            
+        </tr>
+    </table>
+    <script src="scriptCall.js"></script>
+</body>
+</html>

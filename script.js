@@ -1,6 +1,6 @@
 async function getUserList() {
   console.log('getUserList')
-  const response = await fetch('http://localhost:3000/api/user')
+  const response = await fetch('http://localhost:3333/api/user')
   const data = await response.json()
   
   const users = document.querySelectorAll('tr > td')
@@ -18,7 +18,7 @@ async function getUserList() {
       newUserTr.id = user.id
       newUserTr.innerHTML = `
         <td>${user.name}</td>
-        <td>${user.birthDate}</td>
+        <td>${user.birth_date}</td>
         <td>${user.email}</td>
         <td>${user.cpf}</td>
       `
@@ -35,18 +35,18 @@ createUserButton.addEventListener('click', async (event) => {
     event.preventDefault()
 
     const name = document.querySelector('input[name="name"]').value
-    const birthDate = document.querySelector('input[name="birthDate"]').value
+    const birth_date = document.querySelector('input[name="birth_date"]').value
     const email = document.querySelector('input[name="email"]').value
     const cpf = document.querySelector('input[name="cpf"]').value
 
-    await fetch('http://localhost:3000/api/user', {
+    await fetch('http://localhost:3333/api/user', {
         method: 'POST',
         headers: {
             "Content-Type": "application/json",
         },
         body: JSON.stringify({ 
             name,
-            birthDate,
+            birth_date,
             email,
             cpf,
         })

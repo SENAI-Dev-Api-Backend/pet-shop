@@ -1,6 +1,6 @@
 module.exports = {
     async up(queryInterface, Sequelize){
-        await queryInterface.createTable('users', {
+        await queryInterface.createTable('animals', {
             id: {
                 allowNull: false,
                 autoIncrement: true,
@@ -10,28 +10,33 @@ module.exports = {
             name:{
                 type: Sequelize.STRING,
             },
-            birth_date: {
+            breed: {
                 type: Sequelize.STRING
             },
-            email:{
-                allowNull: false,
-                type:Sequelize.STRING
+            age:{
+                type:Sequelize.INTEGER
             },
-            cpf:{
+            weight:{
+                type: Sequelize.STRING
+            },
+            owner_name:{
+                type: Sequelize.STRING
+            },
+            is_vacinated:{
                 type: Sequelize.STRING
             },
             createdAt: {
                 allowNull: false,
                 type: Sequelize.DATE
-              },
-              updatedAt: {
+            },
+            updatedAt: {
                 allowNull: false,
                 type: Sequelize.DATE
-              }
+            }
         })
     },
 
     async down(queryInterface, Sequelize){
-        await queryInterface.dropTable('users');
+        await queryInterface.dropTable('animals');
     }
 }
