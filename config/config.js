@@ -11,8 +11,6 @@ module.exports = {
   },
   production: {
     ...config.database,
-  },
-  jwtTken:{
-    ...config.jwt
   }
 }
+
