@@ -11,7 +11,7 @@ app.use("/index.css", express.static('./index.css'))
 app.use("/script.js", express.static('./script.js'))
 
 app.use("/animals", express.static('./animals.html'))
-app.use("/animals.css", express.static('./animals.css'))
+app.use("/animals.css", express.static('./animals.css' ))
 app.use("/scriptAnimal.js", express.static('./scriptAnimal.js'))
 
 app.use("/services", express.static('./services.html'))
